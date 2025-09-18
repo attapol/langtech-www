@@ -1,1 +1,5 @@
-DirectoryIndex index.html
+RewriteEngine On
+RewriteBase /langtech/
+
+RewriteCond %{REQUEST_URI} ^/langtech/?$
+RewriteRule ^$ index.html [L]
